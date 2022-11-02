@@ -1,0 +1,369 @@
+.jimu-widget-sap .input-txt {
+  margin-top: 2px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.jimu-widget-sap .panel-land-type {
+  margin: 25px 0;
+  /* display: none; */
+  width: 100%;
+  font-weight: bolder;
+  color: #085e5e;
+  box-shadow: 6px 7px 7px -1px #eee;
+}
+
+.jimu-widget-sap .panel-container {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  text-align: center;
+  width: 430px;
+}
+
+.container-main {
+  display: none;
+}
+
+.jimu-widget-sap .panel-title {
+  /* background: aquamarine;
+  padding: 7px 17%;
+  font-weight: bolder;
+  word-spacing: 2px;
+  color: darkcyan;
+  text-transform: uppercase;
+  box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%); */
+  font: 1.2rem molot;
+  text-shadow: 1px 1px 0px #fff, 1px 1px 1px #000;
+  font-weight: bolder;
+  word-spacing: 2px;
+  color: darkcyan;
+  text-transform: uppercase;
+}
+
+/* .master-input-txt {
+  margin-top: 2px;
+  width: 50%;
+  margin-bottom: 15px;
+  margin-left: 10px;
+} */
+
+
+.jimu-widget-sap .master-input-txt {
+  width: 30%;
+  height: 25px;
+  padding: 0px;
+  color: #eee;
+  font-weight: bolder;
+  font-size: 8px !important;
+  background: #33333336;
+}
+
+.jimu-widget-sap .mst-container {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.jimu-widget-sap .mst-item {
+  flex-grow: 1;
+}
+
+.jimu-widget-sap .mst-item+.mst-item {
+  margin-left: 1%;
+}
+
+.jimu-widget-sap label.mst-item {
+  width: 20%;
+  font-size: 11px;
+}
+
+.jimu-widget-sap .master-panel {
+  background: #aeced3b5;
+  padding: 7px 3%;
+  margin: 30px -9px;
+  font-weight: bolder;
+  color: #085e5e;
+  border-radius: 3%;
+  box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%);
+  display: none;
+}
+
+.pay-label {
+  margin-right: 10px;
+  padding-top: 8px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: chocolate;
+}
+
+.jimu-widget-sap .compensation-input {
+  width: 40%;
+  /* height: 25px; */
+  padding: 0;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.jimu-widget-sap .wbs-input {
+  width: 25%;
+  /* height: 25px; */
+  padding: 0;
+  font-weight: bolder;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.wbs-rnr {
+  width: 40%;
+}
+
+.wbs-rnr-input {
+  width: 70%;
+  padding: 0;
+  font-weight: bolder;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.compensation-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin: 5px 0 10px;
+}
+
+.compensation-item {
+  /* flex-grow: 1; */
+  /* width: 300px;
+  margin: 5px; */
+  /* text-align: center; */
+}
+
+label {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.jimu-widget-sap .payment-status {
+  text-align: start;
+  background: #ffeb3beb;
+  padding: 7px 5%;
+  font-size: 15px;
+  font-weight: bolder;
+  word-spacing: 2px;
+  color: chocolate;
+  box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%);
+}
+
+div#widgets_SAPIntegration_Widget_20_panel {
+  width: 470px !important;
+}
+
+.labelsAndValues-labelCell {
+
+  background-color: lightgrey;
+  padding-left: 5px;
+}
+
+.labelsAndValues-valueCell {
+
+  padding-left: 20px;
+  background-color: lightblue;
+}
+
+.jimu-widget-sap .owner-panel {
+  margin: 10px -9px;
+  font-weight: bolder;
+}
+
+
+/* td.owner-data,
+th.owner-data {
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: darkcyan;
+  font-size: 12px;
+} */
+#owner-container table {
+  border-collapse: collapse;
+}
+
+#owner-container th {
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: darkcyan;
+  font-size: 12px;
+  background: lightblue;
+  border: 1px solid #999;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#owner-container td {
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: darkcyan;
+  font-size: 12px;
+  width: 16rem;
+}
+
+.overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 2;
+  background: transparent;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background: #fff;
+  content: '§';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.total-amt {
+  color: green;
+  font-size: 17px !important;
+}
+
+.pending-amt {
+  color: red;
+  font-size: 17px !important;
+}
+
+.jimu-widget-sap .com-input-txt {
+  width: 35%;
+  height: 25px;
+  padding: 0px;
+  color: #eee;
+  font-weight: bolder;
+  font-size: 8px !important;
+  background: #33333336;
+}
+
+.jimu-widget-sap .com-container {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.jimu-widget-sap .com-item {
+  flex-grow: 1;
+}
+
+.jimu-widget-sap .com-item+.com-item {
+  margin-left: 1%;
+}
+
+.jimu-widget-sap label.com-item {
+  width: 50%;
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+#owner_list_container {
+  display: none;
+}
+
+.component-panel {
+  display: none;
+}
+
+.date-textbox {
+  font-size: 15px;
+  font-weight: bolder;
+  text-decoration: underline;
+  background-color: #ff57226e;
+  border-color: #ff5722;
+}
+
+.date-textbox-label {
+  color: mediumvioletred;
+  font-size: 14px;
+  font-weight: bolder;
+  /* text-decoration: underline; */
+}
+
+.container-payment-status {
+  font-weight: bolder;
+  margin-bottom: 30px;
+  border-radius: 0 0 0 50%;
+  box-shadow: 0px 1px 21px -3px rgb(0 0 0 / 80%);
+  display: none;
+}
+
+caption {
+  font: 1.1rem molot;
+  text-shadow: 1px 1px 0px #fff, 1px 1px 1px #000;
+  text-align: center;
+  font-weight: bolder;
+  word-spacing: 2px;
+  color: darkcyan;
+  text-transform: uppercase;
+}
+
+.status-details {
+  /* display: none; */
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.status-details td,
+.status-details th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.status-details td:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.status-details td:nth-child(2) {
+  background-color: #f2f2f2;
+  color: red;
+  font-weight: bolder;
+}
+
+.status-details td:hover {
+  background-color: #ddd;
+}
+
+.status-details th {
+  background-color: #95a5a6b8;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #795548;
+  font-weight: 700;
+}
+
+td>span {
+  color: #009688cc;
+  font-weight: bold;
+}
+
+td>div {
+  color: #009688cc;
+  font-weight: bold;
+}
