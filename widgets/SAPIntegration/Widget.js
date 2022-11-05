@@ -96,7 +96,7 @@ define([
       "fiscal_year",
       "company_code",
       "sp_g_l",
-      "place_supply",
+      "witholding_tax_code",
       "business_area",
       "tax_code",
       "business_place",
@@ -105,7 +105,7 @@ define([
       "assignment",
       "bank_partner_type",
       "doc_sub_category",
-      "remark",
+      "witholding_tax_code",
     ],
     privateFields: [
       "pay_cost_unit",
