@@ -863,9 +863,6 @@ define([
       popup.on(
         "execute",
         lang.hitch(this, function () {
-          let raiseSAPAttrib = {
-            parcel_id: this.parcel_id,
-          };
           let paymentAttributes = {
             parcel_id: this.parcel_id,
             owner_id: this.owner_id,
@@ -879,23 +876,25 @@ define([
               let amount = parseFloat(
                 dom.byId(element).value.replace(/,/g, "")
               );
-              if (isNaN(amount)) {
-                alert("Please fill the requred details");
-                return;
-              }
-              console.log(amount);
               let WBS = dom.byId(wbselement).value;
-              payment_detail.push({
-                amount,
-                compn_type,
-                WBS,
-              });
+              console.log(amount);
+              if (!isNaN(amount)) {
+                payment_detail.push({
+                  amount,
+                  compn_type,
+                  WBS,
+                });
+              }
             }
+          }
+          if (payment_detail.length === 0) {
+            alert("Please fill the requred details");
+            return;
           }
           paymentAttributes["payment_detail"] = payment_detail;
           paymentAttributes["sap_list"] = this.sapList;
           console.log(paymentAttributes);
-          // this.postRaisedPayRnR(paymentAttributes);
+          this.postRaisedPayRnR(paymentAttributes);
         })
       );
       popup.on("cancel", function () {
