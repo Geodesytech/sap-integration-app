@@ -218,6 +218,7 @@ define([
     landType: null,
     wbsList: [
       { id: "Please Select WBS", label: "Please Select WBS" },
+      { id: "M-SR00007-01-01", label: "M-SR00007-01-01" },
       { id: "P-1000-01", label: "P-1000-01" },
       { id: "P-1000-02", label: "P-1000-02" },
       { id: "P-1000-03", label: "P-1000-03" },
