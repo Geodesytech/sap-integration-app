@@ -104,16 +104,6 @@
 					data-dojo-props="trim:true, propercase:true" id="section_code" />
 		</div>
 		<div class="mst-container">
-			<label  class="mst-item" for="profit_center">Profit Center</label>
-			<input type="text" name="profit_center" value="" disabled class="master-input-txt "
-					data-dojo-type="dijit/form/TextBox"
-					data-dojo-props="trim:true, propercase:true" id="profit_center" />
-			<label  class="mst-item" for="assignment">Assignment</label>
-			<input type="text" name="assignment" value="" disabled class="master-input-txt "
-					data-dojo-type="dijit/form/TextBox"
-					data-dojo-props="trim:true, propercase:true" id="assignment" />
-		</div>
-		<div class="mst-container">
 			<label  class="mst-item" for="witholding_tax_code">Withholding Tax Code</label>
 			<input type="text" name="witholding_tax_code" value="" disabled class="master-input-txt "
 					data-dojo-type="dijit/form/TextBox"
@@ -123,6 +113,17 @@
 					data-dojo-type="dijit/form/TextBox"
 					data-dojo-props="trim:true, propercase:true" id="withholding_tax_type" />
 		</div>
+		<div class="mst-container">
+			<label  class="mst-item" for="profit_center">Profit Center</label>
+			<input type="text" name="profit_center" value="" disabled class="master-input-txt "
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="profit_center" />
+			<label  class="mst-item" for="text">Payment Ref</label>
+			<input type="text" name="text" value="" disabled class="master-input-txt "
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_ref" />
+		</div>
+
 	</div>
 	<div id="private-panel" class="component-panel">
 		<div id="owner-container" class="owner-panel">
@@ -601,6 +602,17 @@
 							data-dojo-props="trim:true, propercase:true"  id="pending_interest" />
 				</div>
 				<hr>
+					<!-- <label for="interest" class="com-item total-amt">Total Amt.</label>
+					<input type="text" name="interest" value="" disabled class="com-input-txt"
+							data-dojo-type="dijit/form/TextBox"
+							data-dojo-props="trim:true, propercase:true"  id="interest" /> -->
+
+				<div class="compensation-container">
+					<label for="pvt_text" class="text-items">Text</label>
+					<input type="text" name="pvt_text" value="" class="text-items text-items-input"
+							data-dojo-type="dijit/form/ValidationTextBox" id="pvt_text"/>
+				</div>
+
 				<!-- <div class="compensation-container">
 					<label for="pvt-rnr-com" class="compensation-item">R&R Compensation</label>
 					<input type="text" name="pvt-rnr-com" value="" class="compensation-input compensation-item"
@@ -995,6 +1007,11 @@
 							data-dojo-props="trim:true, propercase:true" />
 				</div>
 				<hr>
+				<div class="compensation-container">
+					<label for="fra_text" class="text-items">Text</label>
+					<input type="text" name="fra_text" value="" class="text-items text-items-input"
+							data-dojo-type="dijit/form/ValidationTextBox" id="fra_text"/>
+				</div>
 				<button data-dojo-type="dijit/form/Button"
 					data-dojo-attach-point="fraPayment"
 					data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconInsertTable'"
@@ -1188,6 +1205,11 @@
 						data-dojo-props="trim:true, propercase:true" id="pending_pay_ench_forest_lnd" />
 			</div>
 			<hr>
+			<div class="compensation-container">
+				<label for="govt_text" class="text-items">Text</label>
+				<input type="text" name="govt_text" value="" class="text-items text-items-input"
+						data-dojo-type="dijit/form/ValidationTextBox" id="govt_text"/>
+			</div>
 			<button data-dojo-type="dijit/form/Button"
 				data-dojo-attach-point="govtPayment"
 				data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconInsertTable'"

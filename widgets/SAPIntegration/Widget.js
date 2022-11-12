@@ -102,7 +102,7 @@ define([
       "business_place",
       "section_code",
       "profit_center",
-      "assignment",
+      // "text",
       "bank_partner_type",
       "doc_sub_category",
       "witholding_tax_code",
@@ -788,6 +788,7 @@ define([
           }
           paymentAttributes["lease_duedate"] = dom.byId("lease_duedate").value;
           paymentAttributes["payment_detail"] = payment_detail;
+          this.sapList[0]["text"] = dom.byId("govt_text").value;
           paymentAttributes["sap_list"] = this.sapList;
           console.log(paymentAttributes);
           this.postRaisedPayGov(paymentAttributes);
@@ -839,6 +840,7 @@ define([
             }
           }
           paymentAttributes["payment_detail"] = payment_detail;
+          this.sapList[0]["text"] = dom.byId("fra_text").value;
           paymentAttributes["sap_list"] = this.sapList;
           console.log(paymentAttributes);
           this.postRaisedPayFra(paymentAttributes);
@@ -893,6 +895,7 @@ define([
             return;
           }
           paymentAttributes["payment_detail"] = payment_detail;
+          this.sapList[0]["text"] = dom.byId("pvt_text").value;
           paymentAttributes["sap_list"] = this.sapList;
           console.log(paymentAttributes);
           this.postRaisedPayRnR(paymentAttributes);
@@ -1218,7 +1221,8 @@ define([
       return false;
     },
     restForm: function () {
-      this.ownerNamesList.value = "";
+      // this.ownerNamesList.value = "";
+      this.ownerNamesList.set("value", "");
       this.rnrWbs.map((rnr, i) => {
         if (rnr.split("_").indexOf("wbs") < 0) {
           dojo.byId(`init_${rnr}`).value = "";
